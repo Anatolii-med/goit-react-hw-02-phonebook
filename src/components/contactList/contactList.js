@@ -1,5 +1,5 @@
 import React from 'react';
-import { Elements, Buttons } from './contactList.styled';
+import { Elements } from './contactList.styled';
 import PropTypes from 'prop-types';
 
 class ContactList extends React.Component {
