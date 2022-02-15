@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormWrap, Labels } from './contactForm.styled';
+import PropTypes from 'prop-types';
 
 class ContactForm extends React.Component {
     state = {
@@ -62,3 +63,8 @@ class ContactForm extends React.Component {
 }
 
 export default ContactForm;
+
+ContactForm.propTypes = {
+    value: PropTypes.string,
+    onChange: PropTypes.func,
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FilterLabel, FilterInput } from './filter.styled';
+import PropTypes from 'prop-types';
 
 class Filter extends React.Component {
     render() {
@@ -18,3 +19,8 @@ class Filter extends React.Component {
 }
 
 export default Filter;
+
+Filter.propTypes = {
+    onChange: PropTypes.func,
+    value: PropTypes.string,
+};

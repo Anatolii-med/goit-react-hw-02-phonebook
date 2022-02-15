@@ -1,5 +1,7 @@
 import React from 'react';
 import { Elements, Buttons } from './contactList.styled';
+import PropTypes from 'prop-types';
+
 class ContactList extends React.Component {
     state = {};
 
@@ -18,3 +20,8 @@ class ContactList extends React.Component {
 }
 
 export default ContactList;
+
+ContactList.propTypes = {
+    key: PropTypes.string,
+    onClick: PropTypes.func,
+};
