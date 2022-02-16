@@ -6,7 +6,7 @@ class ContactList extends React.Component {
     state = {};
 
     render() {
-        return this.props.contList.map(({ id, name, number } = cont) => {
+        return this.props.contList.map(({ id, name, number }) => {
             return (
                 <Elements key={id}>
                     {name}:{number}
