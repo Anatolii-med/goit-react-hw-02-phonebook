@@ -34,9 +34,9 @@ class App extends React.Component {
         this.setState({ filter: e.target.value });
     };
 
-    deleteContacts = name => {
+    deleteContacts = id => {
         this.setState(prevState => ({
-            contacts: prevState.contacts.filter(prev => prev.name !== name),
+            contacts: prevState.contacts.filter(prev => prev.id !== id),
         }));
     };
 

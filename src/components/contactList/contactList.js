@@ -10,7 +10,7 @@ class ContactList extends React.Component {
             return (
                 <Elements key={cont.id}>
                     {cont.name}:{cont.number}
-                    <button onClick={() => this.props.delete(cont.name)}>
+                    <button onClick={() => this.props.delete(cont.id)}>
                         Delete
                     </button>
                 </Elements>
